@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100%;
+}
+
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: aqua;
+}
+
+.header{
+    background-color: #ccc;
+    grid-column: 2/3;
+}
+
+.body{
+    background-color: aquamarine;
+    grid-column: 2/3;
+}

@@ -11,7 +11,7 @@ body, html{
 .container{
     font-family: Helvetica;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 4.5fr;
     grid-template-rows: 1fr 4fr;
     height: 100%;
 }
@@ -150,4 +150,90 @@ p i{
 .body{
     background-color: #d8e1e6;
     grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 2.8fr 1fr;
+}
+
+.body-left{
+    padding: 16px 20px;
+}
+
+.title{
+    font-size: 19px;
+    font-weight: 550;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    overflow: auto;
+    height: 550px;
+}
+
+.projects .cards{
+    background-color: white;
+    height: 200px;
+    border-radius: 10px;
+    border-left: 10px solid goldenrod;
+    padding: 15px 30px 15px 20px;
+}
+
+.cards div{
+    display: grid;
+    justify-self: end;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    font-size: 22px;
+}
+
+.cards h2{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.cards p{
+    margin-top: 5px;
+    font-size: 14px;
+    color: gray;
+    height: 100px;
+    margin-bottom: 0;
+    padding-right: 40px;
+    
+}
+
+.body-right{
+    padding: 16px 20px 16px 5px;
+}
+
+.announcement{
+    height: 330px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px 30px;
+}
+
+.announcement div{
+    height: 95px;
+}
+
+.announcement p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.announcement .description{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+
+}
+
+.second {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
